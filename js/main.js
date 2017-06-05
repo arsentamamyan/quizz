@@ -242,65 +242,36 @@ var getMaxAnswered = function (obj) {
 };
 
 var getResult = function (animal) {
+	var resultHtml = '<div class="col-lg-12 result">' + 
+						'<div class="animal-name text-center">' 
+							+ animal + 
+						'</div>'+
+						'<div class="animal-photo text-center"><img src="./images/animals/' + animal + '.jpg"></div>' +
+						'<div class=text-center><button onClick="location.reload();" class="btn btn-primary start-over">Start Over</button></div>' +
+					'</div>';
 	switch (animal) {
 		case 'tiger':
-		$('.panel-body').html('<div class="col-lg-12 result">' + 
-									'<div class="animal-name text-center">' 
-										+ animal + 
-									'</div>'+
-									'<div class="animal-photo text-center"><img src="./images/animals/tiger.jpg"></div>' +
-									'<div class=text-center><button onClick="location.reload();" class="btn btn-primary start-over">Start Over</button></div>' +
-								'</div>');
+		$('.panel-body').html(resultHtml);
 		$('.sub-heading').remove();
 		break;
 		case 'lion':
-		$('.panel-body').html('<div class="col-lg-12 result">' + 
-									'<div class="animal-name text-center">' 
-										+ animal + 
-									'</div>'+
-									'<div class="animal-photo text-center"><img src="./images/animals/lion.jpg"></div>' +
-									'<div class=text-center><button onClick="location.reload();" class="btn btn-primary start-over">Start Over</button></div>' +
-								'</div>');
+		$('.panel-body').html(resultHtml);
 		$('.sub-heading').remove();
 		break;
 		case 'bear':
-		$('.panel-body').html('<div class="col-lg-12 result">' + 
-									'<div class="animal-name text-center">' 
-										+ animal + 
-									'</div>'+
-									'<div class="animal-photo text-center"><img src="./images/animals/bear.jpg"></div>' +
-									'<div class=text-center><button onClick="location.reload();" class="btn btn-primary start-over">Start Over</button></div>' +
-								'</div>');
+		$('.panel-body').html(resultHtml);
 		$('.sub-heading').remove();
 		break;
 		case 'shark':
-		$('.panel-body').html('<div class="col-lg-12 result">' + 
-									'<div class="animal-name text-center">' 
-										+ animal + 
-									'</div>'+
-									'<div class="animal-photo text-center"><img src="./images/animals/shark.jpg"></div>' +
-									'<div class=text-center><button onClick="location.reload();" class="btn btn-primary start-over">Start Over</button></div>' +
-								'</div>');
+		$('.panel-body').html(resultHtml);
 		$('.sub-heading').remove();
 		break;
 		case 'wolf':
-		$('.panel-body').html('<div class="col-lg-12 result">' + 
-									'<div class="animal-name text-center">' 
-										+ animal + 
-									'</div>'+
-									'<div class="animal-photo text-center"><img src="./images/animals/wolf.jpg"></div>' +
-									'<div class=text-center><button onClick="location.reload();" class="btn btn-primary start-over">Start Over</button></div>' +
-								'</div>');
+		$('.panel-body').html(resultHtml);
 		$('.sub-heading').remove();
 		break;
 		case 'hawk':
-		$('.panel-body').html('<div class="col-lg-12 result">' + 
-									'<div class="animal-name text-center">' 
-										+ animal + 
-									'</div>'+
-									'<div class="animal-photo text-center"><img src="./images/animals/hawk.jpg"></div>' +
-									'<div class=text-center><button onClick="location.reload();" class="btn btn-primary start-over">Start Over</button></div>' +
-								'</div>');
+		$('.panel-body').html(resultHtml);
 		$('.sub-heading').remove();
 		break;
 	}
