@@ -1,0 +1,86 @@
+body {
+	background-color: rgb(0, 58, 50);
+}
+.information {
+	background: #8dc63f;
+    background: rgba(141,198,63,0.8) !important;
+    border-color: #8dc63f !important;
+} 
+.information > div > span:first-child{
+	display: block;
+	font-weight: normal;
+    font-size: 60px;
+    font-family: 'wwf', sans-serif;
+    color: #fff;
+    line-height: 100%;
+}
+.information > div > span:last-child{
+	font-weight: normal;
+	font-family: 'wwf', sans-serif;
+    font-size: 24px;
+    color: #0d571f;
+    line-height: 100%;
+}
+.question-number > span {
+	color: #58821c;
+	font-size: 60px;
+	font-family: 'wwf', sans-serif;
+    font-weight: normal;
+}
+.question {
+	text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'wwf', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #000;
+    line-height: 100%;
+}
+.options {
+	margin-top: 20px;
+}
+.option {
+	height: 200px;
+	margin: 0 auto;
+	cursor: pointer;
+	margin: 5px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+.option:hover {
+	opacity: 0.8;
+}
+.option-text {
+	border: 1px solid #d0d0d0;
+	background-color: #e3e6e6;
+	font-size: 25px;
+	font-family: 'wwf', sans-serif;
+}
+.option-test:hover {
+	opacity: 0.6;
+}
+.animal-name {
+	font-size: 60px;
+	font-family: 'wwf', sans-serif;
+	letter-spacing: 10px;
+	text-transform:capitalize;
+}
+.animal-photo > img {
+	width: 720px;
+}
+.start-over {
+	margin: 15px;
+}
+
+/* Custom static classes */
+.m-top-50 {
+	margin-top: 50px;
+}
+
+
+
+/* Fonts */
+@font-face {
+    font-family: wwf;
+    src: url(../fonts/wwf.otf);
+}
